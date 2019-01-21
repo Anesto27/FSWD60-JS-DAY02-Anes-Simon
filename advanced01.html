@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1 Advanced | Time Convert</title>
+</head>
+<body>
+	<script>
+		function timeConvert(){
+			var a=prompt("add a number please"); // prompt for user Input
+			var hours= Math.floor(a/60);		// set variable name called hours and convert the privious variable (a) into hours with Math.floor---> which returns the numbers to the nearest integer.
+			var min=a%60;	// set variable called min and used the privious var a to get the rest of the minutes 
+			document.write("hours " + hours + "<br>minutes " +min);
+		}
+
+		timeConvert();
+	</script>
+</body>
+</html>

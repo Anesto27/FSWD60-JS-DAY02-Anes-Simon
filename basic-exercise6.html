@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Error handling</title>
+</head>
+<body>
+	<p id="Error"></p>
+	<script type="text/javascript">
+try{
+   	var person = prompts("Please enter your name", "Harry Potter");
+
+   	document.getElementById("message").innerHTML =
+
+   	"Hello " + person + "! How are you today?";
+   	}
+   	catch(err){
+   		document.getElementById("Error").innerHTML=err.message;
+   	}
+   </script>
+	
+</body>
+</html>

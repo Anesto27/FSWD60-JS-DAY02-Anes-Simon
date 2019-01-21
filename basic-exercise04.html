@@ -7,9 +7,9 @@
 <body>
 	<script>
 		function convertDegrees(the_degrees){
-			var convert= the_degrees*(Math.PI/180);
-			//var round= Math.round(convert);
-			document.write(convert);
+			var convert= the_degrees*(Math.PI/180); //converts our argument from degrees do radiant
+			var round=parseFloat(convert.toFixed(5)); //converts the decimal part of the number to 5 digits
+			document.write(round); //gives us the rounded number
 		}
 		 convertDegrees(90);
 

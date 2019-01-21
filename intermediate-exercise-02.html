@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="sum"><p>
+	<p id="avrg"></p>
+	<script>
+		function grades(a,b,c) {
+			var sum=a+b+c;
+			var average=sum/3;
+			document.getElementById("sum").innerHTML="The sum is " + sum;
+			document.getElementById("avrg").innerHTML="The average is "+average;
+
+		}
+
+		grades(3,4,5);
+
+
+	</script>
+</body>
+</html>

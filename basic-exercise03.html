@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Age Calculator</title>
+</head>
+<body>
+	<script>
+		function ageCalculator(birth_year){
+			var date= new Date();
+			var currentDate=date.getFullYear();
+			var age1= currentDate-birth_year-1;
+			var age2= currentDate-birth_year;
+			var sentence= "You are either " + age1 + " or " + age2;
+			document.write(sentence);
+
+		}
+		 ageCalculator(1991);
+
+		
+
+
+
+	</script>
+</body>
+</html>

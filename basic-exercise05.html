@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="area"></p>
+	<p id="volume"></p>
+	<script>
+		function calcBox(width,height,depth) {
+			var area=width*height;
+			var volume=width*height*depth;
+			var sentenceArea="The area of the box is " + area;
+			var sentenceVol="The volume of the box is " + volume;
+			document.getElementById("area").innerHTML = sentenceArea;
+			document.getElementById("volume").innerHTML = sentenceVol;
+		}
+
+		calcBox(120,25,98);
+
+		
+
+
+		calcBox(15,22,17);
+		
+	</script>
+</body>
+</html>
